@@ -734,6 +734,44 @@
       }
     }
 
+    /* Floating Round Discord Button */
+    .discord-float {
+      position: fixed;
+      bottom: 110px;
+      right: 30px;
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, #5865F2, #4752c4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      box-shadow: 0 10px 30px rgba(88, 101, 242, 0.4);
+      cursor: pointer;
+      z-index: 1000;
+      transition: all 0.3s ease;
+      animation: float 3s ease-in-out infinite 0.5s;
+      text-decoration: none;
+    }
+
+    .discord-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 15px 40px rgba(88, 101, 242, 0.6);
+      animation: none;
+    }
+
+    .discord-float::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.3);
+      animation: pulse 2s infinite 0.5s;
+    }
+
     /* Floating Round Telegram Button */
     .telegram-float {
       position: fixed;
@@ -1563,6 +1601,14 @@
         font-size: 2rem;
       }
       
+      .discord-float {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+        bottom: 90px;
+        right: 20px;
+      }
+      
       .telegram-float {
         width: 60px;
         height: 60px;
@@ -1621,6 +1667,14 @@
         font-size: 1.8rem;
       }
       
+      .discord-float {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        bottom: 80px;
+        right: 15px;
+      }
+      
       .telegram-float {
         width: 50px;
         height: 50px;
@@ -1671,7 +1725,7 @@
       <img src="images/profit2.jpg" alt="Accurate Entry Precision" class="proof-image">
       <div class="proof-overlay">
         <h3>Accurate Entry Precision</h3>
-        <p>Advanced AI algorithms identifying perfect entry points in XAU/USD markets</p>
+        <p>Advanced smart algorithms identifying perfect entry points in XAU/USD markets</p>
       </div>
     </div>
 
@@ -2157,6 +2211,11 @@
     </div>
   </div>
 
+  <!-- Floating Round Discord Button -->
+  <a href="https://discord.gg/EUemDzE5VB" class="discord-float" target="_blank" title="Join Discord Community">
+    <i class="fab fa-discord"></i>
+  </a>
+
   <!-- Floating Round Telegram Button -->
   <a href="https://t.me/Teamaarush" class="telegram-float" target="_blank" title="Buy on Telegram">
     <i class="fab fa-telegram-plane"></i>
@@ -2236,13 +2295,13 @@
       
       <div class="features-grid">
         <div class="feature-card">
-          <h3><i class="fas fa-brain"></i> AI Intelligence</h3>
-          <p>Our proprietary AI algorithm analyzes market patterns, learns from price action, and makes intelligent trading decisions in real-time.</p>
+          <h3><i class="fas fa-cogs"></i> Smart Algorithms</h3>
+          <p>Our proprietary smart algorithms analyze market patterns, learn from price action, and make intelligent trading decisions in real-time.</p>
         </div>
         
         <div class="feature-card">
           <h3><i class="fas fa-chart-line"></i> Price Action Focus</h3>
-          <p>Based on traditional price action principles combined with modern machine learning for superior market analysis.</p>
+          <p>Based on traditional price action principles combined with modern smart algorithms for superior market analysis.</p>
         </div>
         
         <div class="feature-card">
@@ -2269,7 +2328,7 @@
           <div class="step-number">1</div>
           <div class="step-content">
             <h3>Market Analysis</h3>
-            <p>AI scans multiple timeframes, analyzing price action patterns, volume, and market structure to identify high-probability trading opportunities.</p>
+            <p>Smart algorithms scan multiple timeframes, analyzing price action patterns, volume, and market structure to identify high-probability trading opportunities.</p>
           </div>
         </div>
         
@@ -2388,7 +2447,7 @@
           <ul class="pricing-features">
             <li><i class="fas fa-check"></i> Everything in Standard</li>
             <li><i class="fas fa-check"></i> Multi-Pair Optimization</li>
-            <li><i class="fas fa-check"></i> Advanced AI Features</li>
+            <li><i class="fas fa-check"></i> Advanced Smart Algorithm Features</li>
             <li><i class="fas fa-check"></i> Priority Telegram Support</li>
             <li><i class="fas fa-check"></i> Custom Strategy Tuning</li>
             <li><i class="fas fa-check"></i> Personal Setup Assistance</li>
@@ -2483,7 +2542,7 @@
             <i class="fas fa-chevron-down faq-toggle"></i>
           </div>
           <div class="faq-answer">
-            SmartfxTrader EA combines price action analysis with traditional trend-following strategies. Our proprietary algorithms continuously learn from market behavior and adapt to changing conditions, providing superior risk management and consistent returns.
+            SmartfxTrader EA combines price action analysis with traditional trend-following strategies. Our proprietary smart algorithms continuously learn from market behavior and adapt to changing conditions, providing superior risk management and consistent returns.
           </div>
         </div>
         
@@ -2543,7 +2602,7 @@
             <i class="fas fa-chevron-down faq-toggle"></i>
           </div>
           <div class="faq-answer">
-            The Standard plan includes the core EA with gold optimization and basic support. The Premium plan adds multi-pair trading, advanced AI features, priority support, custom strategy tuning, personal setup assistance, VPS support, and premium updates. Both plans work with MT4 and MT5 via trade copier.
+            The Standard plan includes the core EA with gold optimization and basic support. The Premium plan adds multi-pair trading, advanced smart algorithm features, priority support, custom strategy tuning, personal setup assistance, VPS support, and premium updates. Both plans work with MT4 and MT5 via trade copier.
           </div>
         </div>
       </div>
@@ -2561,7 +2620,10 @@
         <div style="text-align: center; margin-top: 3rem;">
           <p style="color: rgba(255,255,255,0.8); margin-bottom: 1rem;">
             <i class="fab fa-telegram" style="color: #0088cc; margin-right: 10px;"></i>
-            Telegram: <a href="https://t.me/Teamaarush" style="color: var(--accent-1);">@Smartfxtrader EA</a>
+            Telegram: <a href="https://t.me/Teamaarush" style="color: var(--accent-1);">@Teamaarush</a>
+            <br>
+            <i class="fab fa-discord" style="color: #5865F2; margin-right: 10px; margin-left: 20px;"></i>
+            Discord: <a href="https://discord.gg/EUemDzE5VB" style="color: var(--accent-1);">Smartfxtrader Community</a>
           </p>
           <p style="color: rgba(255,255,255,0.8);">
             <i class="fas fa-clock" style="color: var(--accent-1); margin-right: 10px;"></i>
@@ -2615,6 +2677,7 @@
             <li><a href="#contact">Contact Us</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="https://t.me/Teamaarush" target="_blank">Telegram Support</a></li>
+            <li><a href="https://discord.gg/EUemDzE5VB" target="_blank">Discord Community</a></li>
           </ul>
         </div>
       </div>
@@ -2911,22 +2974,26 @@
       });
     }
     
-    // Contact form submission
+    // Contact form submission - Redirects to Telegram only
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
       contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        alert('Thank you for your message! We will contact you soon.');
+        window.open('https://t.me/Teamaarush', '_blank');
         contactForm.reset();
       });
     }
     
     // Telegram button animation reset
     const telegramBtn = document.querySelector('.telegram-float');
+    const discordBtn = document.querySelector('.discord-float');
+    
     setInterval(() => {
       telegramBtn.style.animation = 'none';
+      discordBtn.style.animation = 'none';
       setTimeout(() => {
         telegramBtn.style.animation = 'float 3s ease-in-out infinite';
+        discordBtn.style.animation = 'float 3s ease-in-out infinite 0.5s';
       }, 10);
     }, 3000);
     
@@ -3014,7 +3081,4 @@
     });
   </script>
 </body>
-
 </html>
-
-
